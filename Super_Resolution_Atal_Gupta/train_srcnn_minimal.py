@@ -18,9 +18,7 @@ import matplotlib.pyplot as plt
 from pathlib import Path
 import argparse
 
-# ============================================================================
 # MODEL DEFINITION
-# ============================================================================
 
 class SRCNN(nn.Module):
     """
@@ -82,9 +80,7 @@ class SRCNN(nn.Module):
         return x
 
 
-# ============================================================================
 # DUMMY DATASET (for Phase 1 - will replace with real data later)
-# ============================================================================
 
 class DummyLensingDataset(Dataset):
     """
@@ -209,9 +205,8 @@ class DummyLensingDataset(Dataset):
         return self.lr_images[idx], self.hr_images[idx]
 
 
-# ============================================================================
+
 # TRAINING FUNCTION
-# ============================================================================
 
 def train_srcnn(args):
     """
@@ -361,9 +356,7 @@ def visualize_results(model, dataset, device, output_dir):
         plt.close()
 
 
-# ============================================================================
 # MAIN
-# ============================================================================
 
 def main():
     """

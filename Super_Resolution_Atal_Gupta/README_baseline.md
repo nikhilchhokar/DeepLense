@@ -96,22 +96,20 @@ pip install torch torchvision numpy matplotlib
 ```bash
 $ python train_srcnn_minimal.py --epochs 5 --save-model
 
-======================================================================
+
 SRCNN TRAINING FOR DEEPLENSE
-======================================================================
+
 
 Device: cuda
 
 Creating dataset...
 Generating 100 dummy lensing images...
-✅ Dummy dataset ready
+Dummy dataset ready
 
 Initializing model...
 Model parameters: 57,281
 
-======================================================================
 TRAINING
-======================================================================
 
 Epoch [1/5] Loss: 0.107833
 Epoch [2/5] Loss: 0.039810
@@ -119,16 +117,14 @@ Epoch [3/5] Loss: 0.021186
 Epoch [4/5] Loss: 0.012626
 Epoch [5/5] Loss: 0.008617
 
-✅ Training complete!
-💾 Model saved: outputs\srcnn_deeplense.pth
+Training complete!
+Model saved: outputs\srcnn_deeplense.pth
 
-Creating visualizations...
-✅ Visualization saved: outputs\srcnn_result.png
+Creating visualizations
+Visualization saved: outputs\srcnn_result.png
 
-======================================================================
 DONE!
-======================================================================
-```
+
 
 ## Architecture Details
 
